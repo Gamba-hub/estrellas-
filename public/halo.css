@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "halo";
+    src: url(fuentes/Halo.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding-top: 60px;
+    background: linear-gradient(rgba(26,30,89,0.8), rgba(26,30,89,0.8)),
+    url('https://www.pixelstalk.net/wp-content/uploads/images6/Halo-Infinite-Desktop-Wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-family: halo;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    padding: 8px;
+    z-index: 1000;
+    background-color:#f0e9e9;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  li {
+    float: left;
+    font-family: F1T;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #a7a2a2;
+    transform: scale(1.2);
+  }
+
+.titulo{
+    text-align: left;
+    font-size: 50px;
+    margin: 20px 100px;
+}
+
+.descripcion{
+    background-color: rgba(28, 31, 95, 0.85);
+    border-radius: 10px;
+    margin-bottom: 30px; /*background-color: #8D99AE; */
+    margin: auto 30px auto 400px;
+    font-size: 1.4rem;
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+    .descripcion p {
+    background-color: #2C2F73;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+.detalles{
+    width: 600px;
+    margin: auto 50PX;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.portadamaster img{
+    border-radius: 10px;
+    background-color: blue;
+    float: left;
+    margin: auto 30px;
+    width: 350px;
+    height: 820px;
+}
+
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px #45a29e;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.juegos{
+    margin: auto 500px;
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+.juegos img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.juegos img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.logout{
+    background-color: #ff0000;
+}
+
+.logout a{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.logout a:hover{
+    background-color: #cfcfbf;
+}

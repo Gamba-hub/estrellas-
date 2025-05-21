@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="imagenes/SECRETOSJJ.avif">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="JJ.css">
+    <meta name="Estrellas y Estrellas" content="width=device-width, initial-scale=1.0">
+    <title>JOSE JOSÉ</title>
+</head>
+    <body>
+        <nav>
+            <ul>
+                <li class="Nav"><a href="bienvenido.html">INICIO</a></li>
+                <li class="Nav"><a href="lalaland.html">LALALAND</a></li>
+                <li class="nav"><a href="Halo.html">HALO</a></li>
+                <LI class="Nav"><a href="sol.html">LUIS MIGUEL</a></LI>
+                <li class="logout"><a href="/logout">CERRAR SESIÓN</a></li>
+            </ul>              
+        </nav>
+
+    <h1 class="titulo">JOSÉ JOSÉ</h1>
+    <div class="josejose"><img src="imagenes/josejose.jpg" alt=""></div>
+    <div class="bio">
+    <p>
+        José Rómulo Sosa Ortiz, conocido artísticamente como José José, fue un cantante, actor y productor musical mexicano
+        nacido el 17 de febrero de 1948 en la Ciudad de México. Es considerado una de las voces más importantes de la música
+        romántica en español y fue apodado “El Príncipe de la Canción”.<br><br>
+        
+        Desde joven mostró talento musical, influenciado por su padre (tenor de ópera) y su madre (pianista). Inició su carrera
+        tocando la guitarra y cantando en tríos, pero alcanzó la fama en 1970 con su interpretación de “El Triste” en el
+        Festival OTI, canción que lo catapultó al estrellato internacional.<br><br>
+        
+        Durante las décadas de los 70 y 80, lanzó múltiples éxitos como “La nave del olvido”, “Gavilán o paloma”, “Almohada”,
+        “Lo pasado, pasado” y “El amor acaba”, consolidándose como ídolo en América Latina y Estados Unidos.<br><br>
+        
+        A lo largo de su vida vendió más de 120 millones de discos, convirtiéndose en uno de los artistas latinos más exitosos
+        de todos los tiempos. También actuó en varias películas y su vida fue llevada a la pantalla en series biográficas.<br><br>
+        
+        José José enfrentó problemas de salud, alcoholismo y dificultades familiares, pero su legado artístico permanece
+        intacto. Falleció el 28 de septiembre de 2019 en Miami, Florida, dejando una huella imborrable en la música en español.
+    </p>
+    </div>
+    
+    <div class="info-info-video">
+        <div class="info">
+            <h4>RECORDS: </h4>
+                <p>
+                    1. Por sus más de 30 producciones discográficas, fue merecedor de más de 200 discos de oro y platino gracias a sus
+                    exitosas ventas.</p>
+                <p>
+                    2. José José vendió más de 250 millones de discos, con lo que se convirtió en uno de los latinoamericanos más
+                    exitosos
+                    de la historia. Su música llegó a países no hispanos como Arabia Saudita, Japón, Israel, Egipto y Rusia.
+                </p>
+                <p>
+                    3. Posee el 2DO disco más vendido en la historia de México, Secretos, con más de 7.5 millones de copias..
+                </p>
+                <p>
+                    4. Grabó más de 50 duetos con artistas como Marco Antonio Muñiz, Angélica María, Armando Manzanero, César Costa,
+                    Enrique
+                    Guzmán, José Feliciano, Roberto Carlos, Vicente Fernández, Pimpinela y Juan Gabriel.
+                </p>
+        </div>
+        <div class="info2">
+        <p>
+            5. De 1968 a 2010 participó en 13 películas, incluida la autobiografía Gavilán o paloma, de 1985.
+        </p>
+        <P>
+            6. De 1971 a 2018 apareció en 15 producciones televisivas, la mayoría, para Televisa, como El mundo joven joven de
+            José
+            José, Los reyes de la canción, Cantando por un sueño y La fea más bella. La última producción en la que participó
+            fue su
+            autobiografía José José, el príncipe de la canción, para Telemundo en 2018.
+        </P>
+        <p>
+            7. En Spotify cuenta con 3,7 millones de oyentes mensuales y 1,9 millones de seguidores. En la plataforma hay más de
+            50
+            producciones del Príncipe de la canción.
+        </p>
+        <p>
+            8. Su canal oficial de YouTube tiene 1,13 millones de suscriptores y más de 1.000 millones de reproducciones de sus
+            videos.
+        </p>
+    </div>
+    <div class="video">
+            <h2>Canción Favorita</h2>
+            <iframe src="https://www.youtube.com/embed/FE8KsAq8EME?si=mOhOvSjmznHx6tbU" allowfullscreen></iframe>
+        </div>
+    </div>    
+
+        <style>
+            .container {
+    margin: 50px auto ;
+      position: relative;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1200px;
+    }
+
+    .carousel {
+      display: flex;
+      align-items: center;
+      transition: transform 0.5s;
+    }
+
+    .carousel img {
+      width: 130px;
+      height: 180px;
+      object-fit: cover;
+      margin: 0 10px;
+      border-radius: 10px;
+      transition: transform 0.5s, filter 0.5s;
+      filter: brightness(0.5);
+      opacity: 0.6;
+    }
+
+    .carousel img.center {
+      transform: scale(1.3);
+      filter: brightness(1);
+      opacity: 1;
+      z-index: 3;
+    }
+
+    .carousel img.left {
+      transform: rotateY(45deg) scale(0.9);
+      z-index: 2;
+    }
+
+    .carousel img.right {
+      transform: rotateY(-45deg) scale(0.9);
+      z-index: 2;
+    }
+
+    .arrow {
+      position: absolute;
+      font-size: 3rem;
+      cursor: pointer;
+      user-select: none;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      color: #fff;
+    }
+
+    .arrow.left {
+      left: -60px;
+    }
+
+    .arrow.right {
+      right: -60px;
+    }
+
+    @media (max-width: 600px) {
+      .carousel img {
+        width: 100px;
+        height: 130px;
+      }
+
+      .arrow {
+        font-size: 2rem;
+      }
+
+      .arrow.left {
+        left: -40px;
+      }
+
+      .arrow.right {
+        right: -40px;
+      }
+    }
+        </style>
+       
+    <div class="container">
+    <div class="arrow left" onclick="prev()">❮</div>
+    <div class="carousel" id="carousel">
+    <img src="imagenes/TristeJJ.jpg" alt="1" class="left">
+    <img src="imagenes/SECRETOSJJ.avif" alt="2" class="center">
+    <img src="imagenes/VOLCANJJ.jpg" alt="3" class="right">
+    <img src="imagenes/REENCUENTROJJ.avif" alt="4" class="right">
+    <img src="imagenes/AAJJ.jpg" alt="5" class="right">
+    <img src="imagenes/LPPJJ.jpg" alt="6" class="right">
+    <img src="imagenes/PROMESASJJ.jpg" alt="7" class="right">
+    <img src="imagenes/40Y20JJ.jpg" alt="8" class="right">
+    <img src="imagenes/LNDOJJ.jpg" alt="9" class="right">
+    <img src="imagenes/ROMANTICOJJ.avif" alt="6" class="right">
+    </div>
+    <div class="arrow right" onclick="next()">❯</div>
+  </div>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    let currentIndex = 1; // Imagen central por defecto
+
+    function updateClasses() {
+      const images = carousel.querySelectorAll('img');
+      images.forEach((img, i) => {
+        img.className = '';
+        if (i === currentIndex) img.classList.add('center');
+        else if (i === currentIndex - 1) img.classList.add('left');
+        else if (i === currentIndex + 1) img.classList.add('right');
+      });
+    }
+
+    function prev() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateClasses();
+      }
+    }
+
+    function next() {
+      const images = carousel.querySelectorAll('img');
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        updateClasses();
+      }
+    }
+
+    // Inicializar
+    updateClasses();
+  </script>
+    
+</body>
+</html>
